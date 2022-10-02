@@ -1,0 +1,292 @@
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2F3136;
+    padding: 0;
+    margin: 0;
+}
+
+aside{
+    flex: 1;
+    
+    margin-top: 70px;
+}
+
+main{
+    flex: 4;
+}
+
+#tabs{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tabs li{
+    padding: 10px;
+    color: white;
+    text-transform: lowercase;
+}
+
+#tabs li.active{
+    background-color: #393c43;
+    font-weight: bold;
+}
+
+#tabs li:not(.active){
+    cursor: pointer;
+}
+
+#content{
+    height: 80vh;
+    margin-top: 70px;
+    position: relative;
+}
+
+#messages{
+    height: 100%;
+    background-color: #393c43;
+    overflow-y: scroll;
+}
+
+#writing{
+    position: absolute;
+    bottom: 0;
+    background-color: #393c43;
+    color: white;
+}
+
+#messages div{
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
+form{
+    display: flex;
+}
+
+#name, #message{
+    padding: 10px;
+    background-color: #40444b;
+    color: white;
+    border: none;
+}
+#name{
+    flex: 1;
+
+}
+#message{
+    flex: 5;
+}
+button{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #839c49;
+    color: white;
+}
+
+
+
+
+
+
+.nav-bar {
+    width: 100%;
+    height: 10%;
+    color: #fff;
+    background: #363636;
+    top: 0;
+    position: absolute;
+    font-family: 'Outfit';
+}
+
+
+.nav-bar h1 {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+ion-icon{
+    font-size: 25px;
+}
+
+/* #form {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    background: #2f3136;
+}
+
+#input {
+    width: 60%;
+    color: #fff;
+    -webkit-box-shadow: 3px 3px 10px 3px #232323;
+    -moz-box-shadow: 3px 3px 10px 3px #232323;
+    box-shadow: 3px 3px 10px 3px #232323;
+}
+
+input {
+    height: 5%;
+    background: #40444B;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+input:focus {
+    border: none;
+}
+
+input:focus {
+    border: none;
+    cursor: text;
+
+}
+
+button {
+    width: 50px;
+
+    border-radius: 5px;
+    border-color: transparent;
+
+    font-size: 25px;
+
+}
+
+
+
+input::placeholder {
+    color: #fff;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#name::placeholder {
+    color: rgb(176, 176, 176);
+}
+
+#name {
+    width: 10%;
+    color: #fff;
+    background: #40444b;
+    -webkit-box-shadow: 3px 3px 10px 3px #232323;
+    -moz-box-shadow: 3px 3px 10px 3px #232323;
+    box-shadow: 3px 3px 10px 3px #232323;
+}
+
+
+
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+
+    margin-top: 100px;
+    left: 0;
+
+
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+aside ul li {
+    color: #fff;
+    margin-top: 10px;
+    list-style-type: none;
+
+
+}
+aside ul li:hover{
+    cursor: pointer;
+}
+
+ul li{
+    background: #46484E;
+    font-size: 2em;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+.tabs li.active{
+    color: #46484E;
+    background: #fff;
+}
+
+li a {
+    color: #fff;
+}
+
+
+.content {
+    color: #fff;
+    -webkit-box-shadow: 3px 3px 10px 3px #232323;
+    -moz-box-shadow: 3px 3px 10px 3px #232323;
+    box-shadow: 3px 3px 10px 3px #232323;
+
+    position: relative;
+    width: 80%;
+    right: 0;
+    height: 70vh;
+    overflow-y: scroll;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 5%;
+    background: #40444B;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.writting {
+    position: absolute;
+    top: 85%;
+    background: #40444B;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+}
+
+#messages {
+    border-radius: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* position: absolute;
+    width: 80%;
+    height: 70vh;
+    overflow-y: scroll;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 5%;
+    background: #46484E;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px; 
+    font-size: 1.5em;
+    color: #fff;
+    list-style-type: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}*/

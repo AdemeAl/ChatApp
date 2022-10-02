@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Socket.io</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Poppins&display=swap" rel="stylesheet">
+ 
+ 
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1>ADM</h1>
+    </div>
+
+    <aside>
+        <ul id="tabs">
+            <li class="active" data-room="general"><ion-icon name="chatbox-ellipses"></ion-icon></li>
+            <li data-room="entraide"><ion-icon name="book"></ion-icon></li>
+            <li data-room="diverses"><ion-icon name="game-controller"></ion-icon></li>
+        </ul>
+    </aside>
+    <main>
+        <div id="content">
+            <div id="messages"></div>
+            <div id="writing"></div>
+        </div>
+        <form>
+            <input type="text" id="name" placeholder="Entrez votre nom">
+            <input type="text" id="message" placeholder="Entrez votre message">
+            <button>Envoyer</button>
+        </form>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- On va chercher socket.io.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
