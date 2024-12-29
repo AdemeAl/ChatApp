@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/AdemeAl/ChatApp.git",
   "dependencies": {
-    "express": "^4.17.1",
-    "sequelize": "^6.3.5",
-    "socket.io": "^3.0.4",
-    "sqlite3": "^5.0.0"
+    "express": "^4.20.0",
+    "sequelize": "^6.37.5",
+    "socket.io": "^4.6.2",
+    "sqlite3": "^5.1.5"
   }
 }
